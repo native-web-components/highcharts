@@ -27,7 +27,7 @@ class WebComponent extends BaseComponent {
   getHighChartsOptions() {
     return this.highChartsOptions;
   }
-  setOptions(options: Highcharts.Options, update?: boolean, redraw?: boolean) {
+  setOptions(options: Highcharts.Options, update: boolean, redraw: boolean = true) {
     this.highChartsOptions = options;
     this.highChartsInstance.update(options, update, redraw);
   }
